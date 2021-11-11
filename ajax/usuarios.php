@@ -9,16 +9,16 @@
 	$clave = isset($_POST["clave"])? limpiarCadena($_POST["clave"]): "";
 	$fecha_nacimiento = isset($_POST["fecha_nacimiento"])? limpiarCadena($_POST["fecha_nacimiento"]): "";
 	$cedula = isset($_POST["cedula"])? limpiarCadena($_POST["cedula"]): "";
-	$rol = isset($_POST["rol"])? limpiarCadena($_POST["rol"]): "";
+	$id_rol = isset($_POST["rol"])? limpiarCadena($_POST["rol"]): "";
 
 	switch ($_GET["op"]){
 		case 'guardaryeditar':
 			if (empty($id_usuario)){
-				$rspta=$usuarios->insertar($usuario, $nombres, $apellidos, $clave, $fecha_nacimiento, $cedula, $rol);
+				$rspta=$usuarios->insertar($usuario, $nombres, $apellidos, $clave, $fecha_nacimiento, $cedula, $id_rol);
 				echo $rspta ? "Usuario registrado" : "Usuario no se pudo registrar";
 			}
 			else {
-				$rspta=$usuarios->editar($id_usuario ,$usuario, $nombres, $apellidos, $clave, $fecha_nacimiento, $cedula, $rol);
+				$rspta=$usuarios->editar($id_usuario ,$usuario, $nombres, $apellidos, $clave, $fecha_nacimiento, $cedula, $id_rol);
 				echo $rspta ? "Usuario actualizado" : "Usuario no se pudo actualizar";
 			}
 		break;

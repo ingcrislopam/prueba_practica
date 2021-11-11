@@ -25,7 +25,7 @@ function limpiar(){
 	$("#clave").val("");
 	$("#fecha_nacimiento").val("");
 	$("#cedula").val("");
-	$("#rol").val("");
+	$("#id_rol").val("");
 }
 
 //Función mostrar formulario
@@ -113,6 +113,7 @@ function mostrar(id_usuario){
 		$("#clave").val(data.clave);
 		$("#fecha_nacimiento").val(data.fecha_nacimiento);
 		$("#cedula").val(data.cedula);
+		$("#id_rol").val(data.id_rol);
 		$('#id_rol').selectpicker('refresh');
 	})
 }

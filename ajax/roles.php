@@ -28,7 +28,7 @@
 		break;
 
 		case 'mostrar':
-			$rspta = $rol->mostrar($id_rol);
+			$rspta = $roles->mostrar($id_rol);
 			//Codificar el resultado utilizando json
 			echo json_encode($rspta);
 		break;

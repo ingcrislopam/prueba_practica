@@ -49,6 +49,7 @@
                         <form name="formulario" id="formulario" method="POST">
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Usuario:</label>
+                            <input type="hidden" name="id_usuario" id="id_usuario">
                             <input type="text" class="form-control" name="usuario" id="usuario" maxlength="20" placeholder="Usuario" required>
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -73,7 +74,6 @@
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Rol:</label>
-                            <input type="hidden" name="id_usuario" id="id_usuario">
                             <select id="id_rol" name="id_rol" class="form-control selectpicker" data-live-search="true" required></select>
                           </div>
                           <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -94,4 +94,4 @@
   <?php
     require 'footer.php';
   ?>
-  <script type="text/javascript" src="scripts/roles.js"></script>
+  <script type="text/javascript" src="scripts/usuarios.js"></script>
