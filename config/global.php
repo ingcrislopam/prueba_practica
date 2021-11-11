@@ -15,5 +15,5 @@
 	define("DB_ENCODE", "utf8");
 
 	//Definimos una constante como nombre del proyecto
-	define("PRO_NOMBRE", "Prueba Practica");
+	define("PRO_NOMBRE", "PRUEBA PRACTICA");
 ?>
