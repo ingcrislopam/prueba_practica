@@ -9,7 +9,7 @@
 	$clave = isset($_POST["clave"])? limpiarCadena($_POST["clave"]): "";
 	$fecha_nacimiento = isset($_POST["fecha_nacimiento"])? limpiarCadena($_POST["fecha_nacimiento"]): "";
 	$cedula = isset($_POST["cedula"])? limpiarCadena($_POST["cedula"]): "";
-	$id_rol = isset($_POST["rol"])? limpiarCadena($_POST["rol"]): "";
+	$id_rol = isset($_POST["id_rol"])? limpiarCadena($_POST["id_rol"]): "";
 
 	switch ($_GET["op"]){
 		case 'guardaryeditar':

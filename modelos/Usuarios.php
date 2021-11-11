@@ -43,7 +43,7 @@
 		//Implementamos un método para listar los registros
 		public function listar(){
 			//$sql = "SELECT m.id_morador, m.id_vivienda, v.nombre as vivienda, m.id_parentesco, p.nombre as parentesco, m.cedula, m.nombres, m.apellidos, m.fecha_nacimiento, m.celular, m.estado FROM morador m INNER JOIN vivienda v ON m.id_vivienda=v.id_vivienda INNER JOIN parentesco p ON m.id_parentesco=p.id_parentesco";
-			$sql = "SELECT u.id_usuario, u.usuario, u.nombres, u.apellidos, u.clave, u.fecha_nacimiento, u.cedula, u.id_rol, r.nombre as rol FROM usuarios u INNER JOIN roles r ON u.id_rol=u.id_rol";
+			$sql = "SELECT u.id_usuario, u.usuario, u.nombres, u.apellidos, u.clave, u.fecha_nacimiento, u.cedula, u.id_rol, r.nombre as rol, u.estado FROM usuarios u INNER JOIN roles r ON u.id_rol=r.id_rol";
 			return ejecutarConsulta($sql);
 		}
 	}
